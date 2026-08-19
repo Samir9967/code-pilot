@@ -9,9 +9,9 @@ datasource db {
 }
 
 enum UserRole {
-    ADMIN
-    USER
-    PREMIUM_USER
+  ADMIN
+  USER
+  PREMIUM_USER
 }
 
 model User {
@@ -37,7 +37,7 @@ model Account {
   tokenType         String?  @map("token_type")
   scope             String?
   idToken           String?  @map("id_token")
-  sessionState      String?  @map("session_state")
+  sessionState      String?
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
