@@ -1,11 +1,18 @@
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import UserButton from "@/features/auth/components/user-button";
 
 export default function Home() {
   return (
     <div>
-      <h1 className="text-4xl font-bold text-amber-400">Samir</h1>
-      <Button>Click Me</Button>
-      </div>
+      <h1 className="text-4xl font-bold text-rose-500">
+        Home
+      </h1>
+
+      <UserButton />
+
+      <Button>
+        Click Me
+      </Button>
+    </div>
   );
 }
